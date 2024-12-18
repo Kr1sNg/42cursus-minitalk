@@ -1,0 +1,60 @@
+kill()
+
+int kill(pid_t pid, int sig);
+
+In C, the kill function is a system call that sends a signal to a process. It is defined in the signal.h header file.
+
+The pid argument specifies the process ID of the process you want to communicate with. The sig argument specifies the signal to be sent to the process. There are various signals that can be sent, each corresponding to a different purpose. For example, the SIGKILL signal is used to terminate processes that are unresponsive or stuck in an infinite loop.
+Here is an example of using the kill function to terminate a process with the SIGKILL signal:
+
+#include <stdio.h>
+#include <signal.h>
+#include <unistd.h>
+
+int main() {
+  pid_t pid = getpid();  // get the process ID of the current process
+  int result = kill(pid, SIGKILL);  // send the SIGKILL signal to the process
+  if (result == 0) {
+    printf("Process terminated successfully.\n");
+  } else {
+    perror("Error terminating process");
+  }
+  return 0;
+}
+
+Note that using the kill function to terminate a process should generally be avoided, as it can leave resources allocated to the process in an undefined state. Instead, it is usually better to allow the process to terminate gracefully by providing it with an opportunity to clean up and release resources before exiting.
+
+-------------
+sleep()
+
+unsigned int sleep(unsigned int seconds);
+
+sleep() is also a function in the C standard library that causes the calling process to sleep for a specified number of seconds.
+
+#include <stdio.h>
+#include <unistd.h>
+
+int main(void) {
+    printf("Sleeping for 3 seconds...\n");
+    sleep(3); // The program waits 3 seconds
+    printf("Done sleeping.\n");
+    return 0;
+}
+
+----------------------------
+usleep()
+
+int usleep(useconds_t usec);
+
+usleep() is a function in the C standard library that causes the calling process to sleep for a specified number of microseconds.
+
+#include <stdio.h>
+#include <unistd.h>
+
+int main(void) {
+    printf("Sleeping for 500000 microseconds...\n");
+    usleep(500000);
+    printf("Done sleeping.\n");
+    return 0;
+}
+
