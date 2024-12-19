@@ -22,10 +22,12 @@
 # include "../libft/includes/libft.h"
 # include <signal.h>
 # include <stdlib.h>
+# include <stdbool.h>
 
 /*
 ** ::::::::::::::::::::::::::* FUNCTION PROTOTYPES *::::::::::::::::::::::::: **
 */
 
+void    Signal(int, void *, bool);
 
 #endif
