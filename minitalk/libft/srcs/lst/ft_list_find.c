@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 17:54:21 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/10/13 19:20:13 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/31 11:54:03 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@
 
 #include "../../includes/libft.h"
 
-t_list	*ft_list_find(t_list *begin_list, void *data_ref, int (*cmp)())
+t_list	*ft_list_find(t_list *begin_list, void *data_ref,
+			int (*cmp)(void *, void *))
 {
 	t_list	*curr;
 

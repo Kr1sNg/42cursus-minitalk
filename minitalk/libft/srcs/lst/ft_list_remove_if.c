@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 20:21:09 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/10/22 19:44:28 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/31 11:56:17 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@
 
 #include "../../includes/libft.h"
 
-void	ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
+void	ft_list_remove_if(t_list **begin_list, void *data_ref,
+			int (*cmp)(void *, void *))
 {
 	t_list	*curr;
 	t_list	*temp;

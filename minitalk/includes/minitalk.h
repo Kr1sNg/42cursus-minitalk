@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 13:48:39 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/12/18 19:55:43 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/31 20:01:07 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,13 @@
 # include "../libft/includes/libft.h"
 # include <signal.h>
 # include <stdlib.h>
-# include <stdbool.h>
+# include <limits.h>
 
 /*
 ** ::::::::::::::::::::::::::* FUNCTION PROTOTYPES *::::::::::::::::::::::::: **
 */
 
-void    Signal(int, void *, bool);
+//void    ft_signal(int, void *, bool);
+//void    ft_kill(pid_t pid, int signo);
 
 #endif

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client.c                                           :+:      :+:    :+:   */
+/*   client_b2.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 17:15:26 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/12/31 19:45:07 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/31 19:55:59 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,10 @@ void	handler_client(int signal)
 	if (signal == SIGUSR1)
 		g_flag = 1;
 	else if (signal == SIGUSR2)
+	{
+		ft_printf("\n📬 Message is well received by Server!\n");
 		exit(EXIT_SUCCESS);
+	}
 }
 
 int	main(int argc, char *argv[])

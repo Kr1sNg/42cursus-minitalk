@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:24:52 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/10/21 13:54:12 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/31 11:57:22 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 
 #include "../../includes/libft.h"
 
-void	ft_list_sort(t_list **begin_list, int (*cmp)())
+void	ft_list_sort(t_list **begin_list, int (*cmp)(void *, void *))
 {
 	t_list	*curr;
 	void	*temp;
