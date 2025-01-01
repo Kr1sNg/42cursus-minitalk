@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client_b2.c                                        :+:      :+:    :+:   */
+/*   client_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 17:15:26 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/12/31 19:55:59 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2025/01/01 12:11:48 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void	handler_client(int signal)
 		g_flag = 1;
 	else if (signal == SIGUSR2)
 	{
-		ft_printf("\n📬 Message is well received by Server!\n");
+		ft_printf("\n\t📬 Message is well received by Bonus Server!\n");
 		exit(EXIT_SUCCESS);
 	}
 }
@@ -50,7 +50,7 @@ int	main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		ft_printf("Usage: %s <Server's PID> \"message\"\n", argv[0]);
+		ft_printf("Usage: %s <Bonus Server's PID> \"message\"\n", argv[0]);
 		exit(EXIT_FAILURE);
 	}
 	pid_server = ft_atoi(argv[1]);
