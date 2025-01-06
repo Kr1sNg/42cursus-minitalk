@@ -51,6 +51,8 @@ int	main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	pid_server = ft_atoi(argv[1]);
+	if (pid_server < 0)
+		exit(EXIT_FAILURE);
 	message = argv[2];
 	signal(SIGUSR1, handler_client);
 	signal(SIGUSR2, handler_client);

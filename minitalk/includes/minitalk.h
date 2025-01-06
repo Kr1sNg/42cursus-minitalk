@@ -28,7 +28,4 @@
 ** ::::::::::::::::::::::::::* FUNCTION PROTOTYPES *::::::::::::::::::::::::: **
 */
 
-//void    ft_signal(int, void *, bool);
-//void    ft_kill(pid_t pid, int signo);
-
 #endif
