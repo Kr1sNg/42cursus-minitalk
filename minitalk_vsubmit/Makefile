@@ -46,18 +46,18 @@ $(LIBFT):
 
 # Build server
 server:	$(OBJS_SERVER)
-	@$(CC) $(CFLAGS) $(INCLUDES) -L$(LIBFT_DIR) -lft -o server $(OBJS_SERVER)
+	@$(CC) $(CFLAGS) $(INCLUDES) -o server $(OBJS_SERVER) -L$(LIBFT_DIR) -lft
 
 # Build client
 client: $(OBJS_CLIENT)
-	@$(CC) $(CFLAGS) $(INCLUDES) -L$(LIBFT_DIR) -lft -o client $(OBJS_CLIENT)
+	@$(CC) $(CFLAGS) $(INCLUDES) -o client $(OBJS_CLIENT) -L$(LIBFT_DIR) -lft
 
 # Build bonus:
 server_bonus: $(OBJS_BONUSS)
-	@$(CC) $(CFLAGS) $(INCLUDES) -L$(LIBFT_DIR) -lft -o server_bonus $(OBJS_BONUSS)
+	@$(CC) $(CFLAGS) $(INCLUDES) -o server_bonus $(OBJS_BONUSS) -L$(LIBFT_DIR) -lft
 
 client_bonus: $(OBJS_BONUSC)
-	@$(CC) $(CFLAGS) $(INCLUDES) -L$(LIBFT_DIR) -lft -o client_bonus $(OBJS_BONUSC)
+	@$(CC) $(CFLAGS) $(INCLUDES) -o client_bonus $(OBJS_BONUSC) -L$(LIBFT_DIR) -lft
 	
 # Clean
 clean:
