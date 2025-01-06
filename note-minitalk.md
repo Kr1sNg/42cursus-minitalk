@@ -775,4 +775,4 @@ Ensure you pass the following as required by the project before submission:
 
 ---
 **Source:**
-[Thuggonaut]<https://github.com/Thuggonaut/42IC_Ring02_Minitalk/blob/main/README.md>
+- [Thuggonaut](https://github.com/Thuggonaut/42IC_Ring02_Minitalk/blob/main/README.md)
