@@ -1,4 +1,4 @@
-## [Step-by-Step Guide to Minitalk Project at School 42](https://medium.com/@Kr1sNg/step-by-step-guide-to-minitalk-project-at-school-42-deacf16369ec)
+## [☎️ &nbsp; Step-by-Step Guide to Minitalk Project at 42](https://medium.com/@Kr1sNg/step-by-step-guide-to-minitalk-project-at-school-42-deacf16369ec)
 
 
 ### 📝 **Introduction**
