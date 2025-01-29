@@ -55,6 +55,7 @@ see in files
 5. **Acknowledgment:**
 
    - After processing each bit, the server sends `SIGUSR1` back to the client to signal readiness for the next bit.
+   - When the whole message is received, the server sends `SIGUSR2` back to the client to confirm.
 
 6. **Server Loop:**
 
